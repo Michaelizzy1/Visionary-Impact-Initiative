@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>About | Visionary Impact Initiative</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +20,6 @@
   padding-top:env(safe-area-inset-top,0px);
   padding-bottom:env(safe-area-inset-bottom,0px);
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    color-scheme:dark;
-    --bg:#0A1819; --surface:#122527; --ink:#EAF3EF; --muted:#9DB5B0; --line:#244042;
-    --teal:#3CC4AE; --teal-d:#2BA895; --deep:#06100F; --on-deep:#EAF3EF;
-  }
-}
-:root[data-theme="dark"]{color-scheme:dark;--bg:#0A1819;--surface:#122527;--ink:#EAF3EF;--muted:#9DB5B0;--line:#244042;--teal:#3CC4AE;--teal-d:#2BA895;--deep:#06100F;--on-deep:#EAF3EF}
 html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
@@ -296,12 +289,12 @@ ul.social{display:flex;gap:10px}
 </header>
 <nav class="menu" id="menu" aria-label="Pages" hidden>
   <ul>
-    <li><a href="#top"><i data-lucide="home"></i>Home</a></li>
+    <li><a href="index.html"><i data-lucide="home"></i>Home</a></li>
     <li><a href="about.html"><i data-lucide="info"></i>About</a></li>
-    <li><a href="programmes.html"><i data-lucide="book-open"></i>Programmes</a></li>
-    <li><a href="gallery.html"><i data-lucide="image"></i>Gallery</a></li>
-    <li><a href="stories.html"><i data-lucide="quote"></i>Stories</a></li>
-    <li><a href="contact.html"><i data-lucide="mail"></i>Contact</a></li>
+    <li><a href="index.html#focus"><i data-lucide="book-open"></i>Programmes</a></li>
+    <li><a href="index.html#gallery"><i data-lucide="image"></i>Gallery</a></li>
+    <li><a href="index.html#stories"><i data-lucide="quote"></i>Stories</a></li>
+    <li><a href="index.html#join"><i data-lucide="mail"></i>Contact</a></li>
   </ul>
   <a class="btn primary" href="index.html#donate"><i data-lucide="heart" class="ico"></i>Donate</a>
 </nav>
